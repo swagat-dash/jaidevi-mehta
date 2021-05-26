@@ -1,0 +1,387 @@
+/*Extra Large Device*/
+@media only screen and (min-width: 1201px){
+	
+}
+/*Extra Large Device*/
+@media only screen and (min-width: 1201px) and (max-width: 1400px){
+	
+}
+/* iPad Pro*/
+@media only screen and (min-width : 1024px) and (max-width : 1100px) {
+	.single_blog .post_info a.blog_btn h4{
+	    font-size: 18px;
+	    line-height: 26px;
+	}
+}
+
+/*Large Device*/
+@media only screen and (min-width: 992px) and (max-width : 1200px) {
+	.shamko_img img{
+		width: 100%;
+	}
+	.welcome_content h1 {
+	    font-size: 52px;
+	}
+	.welcome_img .shamko_img img{
+		width: 100%;
+	}
+	.shamko_about_us .shamko_content_box h2{
+		font-size: 32px;
+	}
+	.shamko_about_us .shamko_content_box h2:after{
+	    margin-bottom: 20px;
+	}
+	.shamko_about_us .shamko_content_box p {
+	    margin-bottom: 10px;
+	}
+	.shamko_about_us .shamko_content_box .shamko_btn {
+	    margin-top: 10px;
+	}
+	.shamko_about_us .about_information .info_list p {
+	    margin-bottom: 0px;
+	}
+	.shamko_about_us .about_information .info_list p{
+	    font-size: 12px;
+	}
+	.portfolio_slider_1 .overlay_content h4{
+		font-size: 18px;
+	}
+	.shamko_service .service_box .service_info h4 {
+	    font-size: 22px;
+	}
+	.shamko_testimonial .content_title {
+	    margin-bottom: 20px;
+	}
+	.shamko_testimonial .content_title h2{
+		font-size: 34px;
+	}
+	.shamko_testimonial .testimonial_text p {
+	    margin-bottom: 15px;
+	}
+	.testimonial_text{
+		padding-bottom: 15px;
+		margin-bottom: 37px;
+	}
+	.shamko_testimonial .row.align-items-center{
+	    align-items: start !important
+	}
+	.testimonial_review_slide .slick-prev{
+		left: 91%;
+		bottom: -15px;
+	}
+	.testimonial_review_slide .slick-next{
+		bottom: -15px;
+	}
+}
+/*Medium Device*/
+@media only screen and (min-width: 768px) and (max-width : 991px) {
+	.shamko_img img{
+		width: 100%;
+	}
+	.qoute{
+		display: none;
+	}
+	.site_menu{
+		display: none;
+	}
+	.mobile_wrapper{
+		display: block;
+	}
+	.section_title h2{
+		font-size: 32px;
+	}
+	.content_title h2{
+	    font-size: 34px;
+	}
+	.shamko_img img{
+		width: 100%;
+	}
+	.header_banner .welcome_content{
+		margin-bottom: 60px;
+	}
+	.header_banner_1 .welcome_img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+	.welcome_img .shamko_img img {
+	    width: 100%;
+	}
+	.shamko_about_us .shamko_img_box .shamko_img:after{
+		display: none;
+	}
+	.shamko_about_us .shamko_img_box {
+	    margin-bottom: 60px;
+	}
+	.shamko_about_us .shamko_content_box h2 {
+	    font-size: 28px;
+	}
+	.portfolio_slider_1 .overlay_content h4{
+		font-size: 22px;
+	}
+	.shamko_skill {
+	    margin-bottom: -60px;
+	}
+	.skill_box {
+	    margin-bottom: 60px;
+	}
+	.testimonial_author_slide {
+	    margin-bottom: 40px;
+	}
+	.testimonial_text{
+		margin-bottom: 45px;
+	}
+	.testimonial_review_slide .slick-prev{
+		left: 94%;
+		bottom: -15px;
+	}
+	.testimonial_review_slide .slick-next{
+		bottom: -15px;
+	}
+	.single_blog .post_info a.blog_btn h4 {
+	    font-size: 22px;
+	    line-height: 28px;
+	}
+	.footer_logo {
+	    text-align: center;
+	    margin-bottom: 40px;
+	}
+	.footer_logo {
+	    text-align: center;
+	    margin-bottom: 40px;
+	}
+	.social_link {
+	    float: none;
+	    text-align: center;
+	}
+	.social_link ul li {
+	    margin-left: 10px;
+	    margin-right: 10px;
+	}
+	/*single_blog.html*/
+	.single_content_box .shamko_img_box {
+	    margin-bottom: 54px;
+	}
+	.post_share_tag .post_tag ul li a {
+	    padding: 6px 13px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.qoute{
+		display: none;
+	}
+	.site_menu{
+		display: none;
+	}
+	.mobile_wrapper{
+		display: block;
+	}
+	.section_title h2{
+		font-size: 32px;
+	}
+	.content_title h2{
+	    font-size: 32px;
+	}
+	.header_banner_1{
+		padding-top: 180px;
+	}
+	.welcome_content h4 {
+	    font-size: 18px;
+	    line-height: 26px;
+	}
+	.header_banner .welcome_content{
+		margin-bottom: 60px;
+	}
+	.welcome_content h1{
+	    font-size: 34px;
+	}
+	.header_banner_1 .welcome_img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+	.welcome_img .shamko_img img {
+	    width: 100%;
+	}
+	.shamko_about_us .shamko_img_box .shamko_img:after{
+		display: none;
+	}
+	.shamko_about_us .shamko_img_box {
+	    margin-bottom: 60px;
+	}
+	.shamko_about_us .shamko_content_box h2 {
+	    font-size: 28px;
+	}
+	.shamko_about_us .about_information .info_list p{
+		display: block;
+	}
+	.shamko_about_us .about_button{
+		text-align: center;
+	}
+	.shamko_about_us .shamko_content_box .shamko_btn {
+		width: 100%;
+	    margin-top: 20px;
+	    margin-right: 0px;
+	}
+	.shamko_about_us .shamko_img_box .experience_box{
+		top: 60%;
+	}
+	.shamko_service .service_box .service_info h4{
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.portfolio_slider_1 .overlay_content h4{
+		font-size: 22px;
+	}
+	.shamko_skill {
+	    margin-bottom: -60px;
+	}
+	.skill_box {
+	    margin-bottom: 60px;
+	}
+	.testimonial_author_slide {
+	    margin-bottom: 40px;
+	}
+	.testimonial_text{
+		margin-bottom: 47px;
+	}
+	.testimonial_review_slide .slick-prev{
+		left: 85%;
+		bottom: -15px;
+	}
+	.testimonial_review_slide .slick-next{
+		bottom: -15px;
+	}
+	.single_blog .post_info a.blog_btn h4{
+	    font-size: 18px;
+	    line-height: 24px;
+	}
+	.single_blog .shamko_img img{
+		width: 100%;
+	}
+	.footer_logo {
+	    text-align: center;
+	    margin-bottom: 40px;
+	}
+	.footer_logo {
+	    text-align: center;
+	    margin-bottom: 40px;
+	}
+	.social_link {
+	    float: none;
+	    text-align: center;
+	}
+	.social_link ul li {
+	    margin-left: 10px;
+	    margin-right: 10px;
+	}
+	/*single_blog.html*/
+	.breadcrumb_content h2 {
+	    font-size: 34px;
+	}
+	.single_content_box .shamko_img_box {
+	    margin-bottom: 54px;
+	}
+	.single_blog_main .post_title h3 {
+	    font-size: 16px;
+	    line-height: 24px;
+	}
+	.post_share_tag .post_tag {
+	    text-align: center;
+	    margin-bottom: 20px;
+	}
+	.post_share_tag .post_share ul li:first-child,
+	.post_share_tag .post_tag ul li:first-child {
+	    margin-right: 10px;
+	    display: block;
+	    margin-left: 10px;
+	    margin-bottom: 15px;
+	}
+	.post_share_tag .post_tag ul li a {
+	    padding: 6px 15px;
+	}
+	.post_share_tag .post_share{
+	    float: none;
+	    text-align: center;
+	}
+	.post_share_tag .post_share ul li a{
+		margin-bottom: 5px;
+	}
+	.single_project_wrapper .project_main_content h3{
+		font-size: 26px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 320px) {
+	.section_title h2 {
+	    font-size: 30px;
+	}
+	.welcome_content h1 {
+	    font-size: 34px;
+	}
+	.shamko_about_us .shamko_content_box h2 {
+	    font-size: 22px;
+	}
+	.shamko_about_us .about_button{
+		text-align: center;
+	}
+	.shamko_about_us .shamko_content_box .shamko_btn {
+		width: 100%;
+		font-size: 14px;
+		letter-spacing: 0px;
+	    margin-top: 20px;
+	    margin-right: 0px;
+	}
+	.portfolio_slider_1 .overlay_content a.overlay_btn{
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+	}
+	.portfolio_slider_1 .overlay_content h4{
+		font-size: 18px;
+	}
+	.post_meta .author_img span{
+		font-size: 13px;
+	}
+	.post_meta .post_link a{
+		font-size: 13px;
+	}
+	.footer_copyright .copyright_text p{
+	    font-size: 13px;
+	}
+}
+
+/* Mobile Devices, Tablets */
+@media only screen and (min-width: 450px) and (max-width : 767px) {
+	.shamko_about_us .shamko_img_box .experience_box{
+		top: 50%;
+	}
+	.shamko_about_us .about_information .info_list p{
+		display: inline-block;
+	}
+	.shamko_about_us .about_button{
+	    text-align: left;
+	}
+	.shamko_about_us .shamko_content_box .shamko_btn {
+		width: 180px;
+	    margin-top: 20px;
+	    margin-right: 20px;
+	}
+	.portfolio_slider_1 .overlay_content h4 {
+        font-size: 16px;
+    }
+    .portfolio_slider_1 .overlay_content a.overlay_btn {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+/* Mobile Devices, Tablets */
+@media only screen and (min-width: 600px) and (max-width : 767px) {
+	.testimonial_review_slide .slick-prev {
+	    left: 92%;
+	}
+}

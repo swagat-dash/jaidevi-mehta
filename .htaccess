@@ -1,0 +1,15 @@
+ErrorDocument 400 http://www.stylecoachjd.com
+ErrorDocument 401 http://www.stylecoachjd.com
+ErrorDocument 403 http://www.stylecoachjd.com
+ErrorDocument 404 http://www.stylecoachjd.com
+ErrorDocument 503 http://www.stylecoachjd.com
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} ^HTTrack [OR]
+RewriteCond %{HTTP_USER_AGENT} ^SiteSucker [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebZip [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebCopier [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zeus
+RewriteRule ^.*$ no_download.html [L]
+Options -Indexes
+IndexIgnore *
+

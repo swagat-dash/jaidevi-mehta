@@ -1,0 +1,1307 @@
+/*>=======================
+	CSS Index
+==========================
+01. Default css
+02. header_area css
+03. header_banner section css
+04. shamko_about section css
+05. shamko_service section css
+06. shamko_skill section css
+07. shamko_portfolio section css
+08. shamko_testimonial section css
+09. shamko_blog section css
+10. shamko_contact section css
+11. shamko_footer css
+12. scroll_top css
+13. Preloader css
+=========================<*/
+
+/*>=======================
+	01.Start Default css
+=========================<*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Satisfy&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	/*color: #fff;*/
+	text-decoration: none;
+}
+a:hover,
+a:focus{
+	color: #ff0066;
+	text-decoration: none;
+	outline: none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Satisfy', cursive;
+	margin: 0;
+	padding: 0;
+}
+h1{
+	font-size: 64px;
+	font-weight: bold;
+}
+h2{
+	font-size: 48px;
+	font-weight: bold;
+}
+h3{
+	font-size: 30px;
+	font-weight: 500;
+}
+h4{
+	font-size: 24px;
+	font-weight: 500;
+}
+h5{
+	font-size: 18px;
+	font-weight: 500;
+}
+h6{
+	font-size: 16px;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+input,
+select,
+textarea{
+	border: none;
+	outline: none;
+}
+button{
+	border: none;
+	cursor: pointer;
+}
+button,
+button:hover,
+button:focus{
+	outline: none;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	line-height: 26px;
+	color: #ffffff;
+	overflow-x: hidden;
+}
+.section_padding{
+	padding: 120px 0;
+}
+.dark_bg{
+	background-color: #242426;
+}
+.black_bg{
+	background-color: #353537;
+}
+.section_title{
+	margin-bottom: 60px;
+}
+.shamko_portfolio .section_title h2,
+.shamko_service .section_title h2{
+	margin-top: -5px;
+}
+.shamko_blog .section_title h2,
+.shamko_contact .section_title h2{
+	margin-top: -10px;
+}
+.dark_title h2{
+	color: #fff;
+	position: relative;
+}
+.section_title h2:after{
+	display: block;
+	content: '';
+	width: 100px;
+  	height: 5px;
+  	background-color: #ff0066;
+  	margin: 19px auto 0;
+}
+.content_title h2{
+	position: relative;
+	color: #fff;
+}
+.content_title h2:after{
+	display: block;
+	content: '';
+	width: 100px;
+  	height: 5px;
+  	background-color: #ff0066;
+  	margin: 19px 0 15px;
+}
+@media (min-width: 1200px){
+	.container{
+	    max-width: 1200px;
+	}
+}
+/*>======================
+	End Default css
+=========================<*/
+
+/*>============================
+	02.Start header_area css
+==============================<*/
+.header_area{
+	background-color: #242426;
+	border-bottom: 1px solid #242426;
+	z-index: 337;
+}
+.transparent_header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: transparent;
+	border-bottom: 1px solid #505050;
+}
+.header_area.sticky{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #242426;
+	border-color: #242426;
+}
+.site_menu{
+	padding: 30px 0;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+.shamko_menu{
+	float: right;
+}
+.shamko_menu .main_menu ul li{
+	display: inline-block;
+	position: relative;
+	margin-left: 30px;
+}
+.shamko_menu .main_menu ul li a{
+	position: relative;
+	display: block;
+	padding: 17px 0px 18px;
+	color: #fff;
+	font-size: 18px;
+	text-transform: capitalize;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.shamko_menu .main_menu ul li:hover a{
+	color: #ff0066;
+}
+.shamko_menu .main_menu ul li.active a{
+	color: #ff0066;
+}
+/* Mobile menu */
+.sticky.mobile_wrapper{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.mobile_wrapper{
+	display: none;
+	padding: 20px 0;
+}
+.menu_button {
+    float: right;
+}
+.menu_icon span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin: 4px 0 2px;
+    transition: all .5s;
+}
+.menu_icon.open span:nth-child(1){
+	transform: rotate(45deg) translateY(5px);
+}
+.menu_icon.open span:nth-child(3){
+	transform: rotate(-45deg) translateY(-5px);
+}
+.menu_icon.open span:nth-child(2){
+	display: none;
+}
+.sidenav_menu{
+	overflow: hidden;
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 50px 20px;
+    z-index: 9999;
+    background: #242426;
+    overflow: auto;
+	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
+	-webkit-transition: -webkit-transform 0.6s ease;
+	transition: transform 0.6s ease;
+}
+.sidenav_menu.open{
+  	transform: translateX(0);
+  	-webkit-transform: translateX(0);
+  	-ms-transform: translateX(0);
+  	transform: translateX(0);
+}
+.sidenav_menu .site_logo{
+	padding: 0 20px;
+	margin-bottom: 40px;
+}
+.times_icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.times_icon i{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #fff;
+	color: #242426;
+	font-size: 16px;
+}
+.sidebar-menu li a {
+	display: block;
+	font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.sidebar-menu li.active a{
+	color: #ff0066;
+}
+.sidebar-menu li a:hover,
+.sidebar-menu li a:focus{
+	color: #ff0066;
+}
+/*>=======================
+	End header_area css
+=========================<*/
+
+/*>=================================
+	03.Start header_banner section css
+====================================<*/
+.header_banner{
+	padding-top: 288px;
+	padding-bottom: 160px;
+	position: relative;
+	z-index: 1;
+}
+#particles-js{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.video_banner .shamko_overlay{
+	opacity: .6;
+}
+.welcome_content{
+	position: relative;
+	z-index: 1;
+	margin-top: 5px;
+	margin-bottom: 17px;
+}
+.welcome_content h1{
+	margin-bottom: 34px;
+	color: #fff;
+}
+.welcome_content h4{
+	font-size: 24px;
+	line-height: 34px;
+	color: #fff;
+	font-family: 'Satisfy';
+	margin-bottom: 56px;
+}
+.shamko_img_box{
+	position: relative;
+}
+.welcome_img .shamko_img{
+	position: relative;
+}
+.shamko_btn {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #ff0066;
+    border-radius: 6px;
+    line-height: 60px;
+    height: 60px;
+    width: 180px;
+    font-weight: 600;
+    text-align: center;
+    transition: all .5s;
+}
+.shamko_btn:hover,
+.shamko_btn:focus{
+	color: #fff;
+}
+.header_banner_1 .welcome_img{
+	position: relative;
+	max-width: 561px;
+	max-height: 562px;
+}
+.welcome_img .shamko_img #bg_shape{
+	position: absolute;
+    right: -35px;
+    top: 5px;
+    z-index: -1;
+}
+/*>===============================
+	End header_banner section css
+==================================<*/
+
+/*>======================================
+	04.Start shamko_about section css
+=========================================<*/
+.shamko_portfolio,
+.shamko_service,
+.shamko_about_us{
+    padding: 119px 0 120px;
+}
+.shamko_skill{
+    padding: 120px 0 119px;
+}
+.shamko_about_us .shamko_img_box{
+	position: relative;
+}
+.shamko_about_us .shamko_img_box .shamko_img{
+	position: relative;
+	z-index: 1;
+}
+.shamko_about_us .shamko_img_box .shamko_img:after{
+	position: absolute;
+	content: '';
+	width: 92.983%;
+	height: 100%;
+	left: -30px;
+	top: 30px;
+	border: 5px solid #ff0066;
+	border-radius: 40px;
+	z-index: -1;
+}
+.shamko_about_us .shamko_img_box .shamko_img img{
+	border-radius: 20px;
+}
+.shamko_about_us .shamko_img_box .experience_box{
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	margin-top: -75px;
+	width: 150px;
+ 	height: 150px;
+  	background-color: #ff0066;
+  	text-align: center;
+  	z-index: 1;
+}
+.shamko_about_us .shamko_img_box .experience_box h3{
+	color: #fff;
+	font-weight: 600;
+}
+.shamko_about_us .shamko_img_box .experience_box span{
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Poppins';
+	font-weight: 400;
+	display: block;
+    margin-top: -1px
+}
+.shamko_about_us .shamko_content_box {
+    display: table;
+    margin-top: -5px;
+}
+.shamko_about_us .shamko_content_box p,
+.shamko_about_us .shamko_content_box h2{
+	color: #fff;
+}
+.shamko_about_us .shamko_content_box h2:after{
+	display: block;
+	content: '';
+	width: 100px;
+  	height: 5px;
+  	background-color: #ff0066;
+  	margin-top: 19px;
+  	margin-bottom: 53px;
+}
+.shamko_about_us .shamko_content_box p{
+	margin-bottom: 29px;
+	display: inline-table;
+}
+.shamko_about_us .about_information{
+	margin-top: 19px;
+}
+.shamko_about_us .about_information .info_list p{
+	margin-bottom: 16px;
+	font-family: 'Poppins';
+}
+.shamko_about_us .about_information .info_list p i{
+	color: #ff0066;
+	margin-right: 10px;
+}
+.shamko_about_us .about_information .info_list p a{
+	color: #fff;
+}
+.shamko_about_us .shamko_content_box .shamko_btn{
+	margin-top: 39px;
+	margin-right: 35px;
+}
+.shamko_about_us .shamko_content_box .active_btn{
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+.shamko_about_us .shamko_content_box .active_btn:hover{
+	background-color: #ff0066;
+	border-color: #ff0066;
+}
+/*>=================================
+	End portfolio_about section css
+====================================<*/
+
+/*>==========================================
+	05.Start shamko_service section css
+=============================================<*/
+.shamko_service{
+	margin-bottom: -60px;
+}
+.shamko_service .service_box{
+	background-color: #242426;
+	padding: 60px 45px 53px;
+	text-align: center;
+	margin-bottom: 60px;
+	transition: all .5s;
+}
+.shamko_service .service_box:hover{
+	background-color: #ff0066;
+}
+.shamko_service .service_box:hover .service_icon i,
+.shamko_service .service_box:hover .service_info a.shamko_link{
+	color: #fff;
+}
+.shamko_service .service_box .service_icon i{
+	font-size: 32px;
+	margin-bottom: 36px;
+	color: #ff0066;
+}
+.shamko_service .service_box .service_info h4{
+	margin-bottom: 23px;
+	font-weight: 600;
+}
+.shamko_service .service_box .service_info p{
+	margin-bottom: 18px;
+}
+.shamko_service .service_box .service_info a.shamko_link{
+	text-decoration: underline;
+	color: #ff0066;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+/*>=======================================
+	End shamko_service section css
+==========================================<*/
+
+/*>===================================
+	06. Start shamko_skill section css
+======================================<*/
+.skill_box {
+	text-align: center;
+}
+.skill_box .chart_1 {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 600;
+    font-family: 'Poppins';
+    font-size: 32px;
+    color: #fff;
+}
+.skill_box canvas{
+	position: absolute;
+    left: 0;
+    top: 0;
+}
+.skill_box h4{
+	font-family: 'Poppins';
+	font-weight: 400;
+	color: #fff;
+	margin-top: 36px;
+}
+/*>==================================
+	End shamko_skill section css
+=====================================<*/
+
+/*>===========================================
+	07. Start shamko_portfolio section css
+=============================================<*/
+.testimonial_main{
+	position: relative;
+}
+.qoute{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.portfolio_slider_1{
+	margin-right: -15px;
+	margin-left: -15px;
+	margin-bottom: 75px;
+	outline: none;
+}
+.single_portfolio{
+	position: relative;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.single_portfolio .shamko_img{
+    position: relative;
+    overflow: hidden;
+}
+.single_portfolio:hover .overlay_img{
+	opacity: .7;
+	visibility: visible;
+}
+.single_portfolio:hover .overlay_content{
+	opacity: 1;
+	visibility: visible;
+}
+.portfolio_slider_1 .overlay_img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 89.46%;
+  	height: 89.46%;
+  	background-color: #000;
+  	opacity: 0;
+  	visibility: hidden;
+  	transition: all .5s;
+}
+.portfolio_slider_1 .overlay_content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+}
+.portfolio_slider_1 .overlay_content a{
+	color: #fff;
+}
+.portfolio_slider_1 .overlay_content h4{
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 24px;
+	margin-bottom: 30px;
+    margin-top: -4px;
+}
+.portfolio_slider_1 .overlay_content a.overlay_btn{
+	display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 15px;
+    margin-right: 15px;
+    outline: none;
+}
+.portfolio_slider_1 .overlay_content a.overlay_btn:hover,
+.portfolio_slider_1 .overlay_content a.overlay_btn:focus{
+	background-color: #ff0066;
+	color: #fff;
+	border-color: #ff0066;
+}
+.portfolio_slider_1 .slick-dots {
+	bottom: -75px;
+}
+/*>===================================
+	End shamko_portfolio section css
+======================================<*/
+
+/*>===========================================
+	08.Start shamko_testimonial section css
+=============================================<*/
+.shamko_testimonial .content_title{
+	margin-bottom: 53px;
+}
+.shamko_testimonial .content_title h2:after{
+	margin: 31px 0 0;
+}
+.testimonial_title{
+	margin-bottom: 60px;
+}
+.testimonial_title h2{
+	position: relative;
+	color: #fff;
+}
+.testimonial_title h2:after{
+	content: '';
+	display: block;
+	width: 100px;
+	width: 100px;
+  	height: 5px;
+  	background-color: #ff0066;
+  	margin-top: 29px;
+}
+.testimonial_text{
+	outline: none;
+	padding-bottom: 28px;
+	border-bottom: 1px solid #505050;
+	margin-left: 1px;
+	margin-bottom: 60px;
+}
+.testimonial_text p{
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 32px;
+}
+.testimonial_text h4{
+	color: #fff;
+	font-weight: 600;
+}
+.testimonial_text h4 span{
+	font-weight: 400;
+	font-size: 16px;
+}
+.testimonial_author_slide{
+	outline: none;
+}
+.testimonial_author_slide .shmako_img{
+	position: relative;
+	text-align: center;
+	outline: none;
+}
+.testimonial_author_slide .shmako_img img{
+	outline: none;
+}
+.testimonial_review_slide .slick-prev:before{
+	content: '\f104';
+}
+.testimonial_review_slide .slick-next:before{
+	content: '\f105';
+}
+.testimonial_review_slide .slick-prev:before,
+.testimonial_review_slide .slick-next:before{
+	font-family: 'Font Awesome 5 Free';
+	font-size: 24px;
+	color: #fff;
+	font-weight: 900;
+}
+.testimonial_review_slide .slick-prev {
+    left: 94.5%;
+    bottom: -5px;
+}
+.testimonial_review_slide .slick-next {
+    right: 0;
+   	bottom: -5px;
+}
+.testimonial_review_slide .slick-prev:hover:before,
+.testimonial_review_slide .slick-next:hover:before{
+	color: #ff0066;
+}
+/*>=========================================
+	End shamko_testimonial section css
+===========================================<*/
+
+/*>========================================
+	09. Start shamko_blog section css
+===========================================<*/
+.shamko_blog .section_title h2:after{
+    margin: 31px auto 0;
+}
+.blog_slider_1{
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-bottom: 75px;
+}
+.single_blog{
+	background-color: #353537;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding: 22px 30px 30px;
+	outline: none;
+	transition: all .3s;
+}
+.single_blog .shamko_img{
+	padding-bottom: 30px;
+}
+.single_blog .post_info{
+	margin-bottom: 26px;
+}
+.single_blog:hover .post_info a.blog_btn{
+	color: #ff0066;
+}
+.single_blog:hover .post_meta .post_link a{
+	color: #ff0066;
+}
+.single_blog .post_info a.blog_btn{
+	color: #fff;
+}
+.single_blog .post_info a.blog_btn h4{
+	line-height: 38px;
+	font-weight: 500;
+}
+.single_blog .post_meta{
+	border-top: 1px solid #505050;
+	padding-top: 30px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post_meta .author_img{
+	display: flex;
+    align-items: center;
+}
+.post_meta .author_img img{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.post_meta .author_img span{
+	margin-top: 2px;
+}
+.post_meta .author_img a{
+	color: #fff;
+	text-transform: capitalize;
+}
+.post_meta .post_link{
+	margin-top: 2px;
+}
+.post_meta .post_link a{
+	color: #fff;
+}
+.post_meta .post_link a:after{
+	display: inline-block;
+	content: '\f061';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	margin-left: 10px;
+}
+.blog_slider_1 .slick-dots {
+	bottom: -75px;
+}
+.portfolio_slider_1 .slick-dots li button,
+.blog_slider_1 .slick-dots li button{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	background-color: transparent;
+	margin-left: 7.5px;
+	margin-right: 7.5px;
+}
+.portfolio_slider_1 .slick-dots li.slick-active button,
+.blog_slider_1 .slick-dots li.slick-active button{
+	background-color: #ff0066;
+	border-color: #ff0066;
+}
+/*>===================================
+	End shamko_blog section css
+======================================<*/
+
+/*>=========================================
+	10. Start shamko_contact section css
+===========================================<*/
+.shamko_contact .form_control{
+	background-color: #242426;
+}
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus{
+	background-color: #242426;
+}
+.form_group{
+	position: relative;
+	margin-bottom: 30px;
+}
+.form_control{
+	width: 100%;
+	height: 60px;
+	color: #ffffff;
+	font-size: 14px;
+	background-color: #242426;
+	padding: 20px;
+}
+.form_control::placeholder{
+	color: #fff;
+}
+textarea.form_control{
+	min-height: 200px;
+	max-height: 500px;
+	display: inherit;
+	padding: 12px 20px;
+}
+.shamko_contact .portfolio_contact_form .shamko_btn{
+	width: 200px;
+}
+/*>======================================
+	End shamko_contact section css
+========================================<*/
+
+/*>==============================
+	11. Start shamko_footer css
+=================================<*/
+.footer_top{
+	padding: 60px 0 59px;
+	border-bottom: 1px solid #505050;
+}
+.social_link{
+	float: right;
+}
+.social_link ul li{
+	display: inline-block;
+	margin-left: 27px;
+}
+.social_link ul li a{
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: transparent;
+	transition: all .3s;
+}
+.social_link ul li a:hover,
+.social_link ul li a:focus{
+	background-color: #ff0066;
+	color: #fff;
+	border-color: #ff0066;
+}
+.footer_copyright{
+	padding: 23px 0 25px;
+}
+.footer_copyright .copyright_text p{
+	color: #FFF;
+}
+/*>=========================
+	End shamko_footer css
+============================<*/
+
+/*>======================================
+	Start shamko_breadcrumb section css
+=========================================<*/
+.shamko_breadcrumb{
+	padding: 152px 0 155px;
+}
+.bg_image{
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.shamko_overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .8;
+}
+.breadcrumb_content{
+	position: relative;
+}
+.breadcrumb_content h2{
+	color: #fff;
+	margin-bottom: 13px;
+}
+.breadcrumb_content ul li{
+	display: inline-block;
+}
+.breadcrumb_content ul li a{
+	color: #fff;
+}
+.breadcrumb_content ul li:after{
+	margin-left: 13px;
+	margin-right: 9px;
+	content: '|';
+	display: inline-block;
+}
+.breadcrumb_content ul li:last-child:after{
+	display: none;
+}
+.breadcrumb_content ul li.active{
+	color: #fff;
+}
+/*>======================================
+	End shamko_breadcrumb section css
+=========================================<*/
+
+/*>================================
+	Start single_project.html css
+==================================<*/
+.shamko_single_project{
+	background-color: #1b1b1b;
+}
+.single_project_wrapper .project_slide .single_project{
+	outline: none;
+}
+.single_project_wrapper .project_main_content{
+	margin-top: 55px;
+	margin-bottom: 25px;
+}
+.single_project_wrapper .project_main_content h3{
+	margin-bottom: 23px;
+}
+.single_project_wrapper .project_main_content p{
+	margin-bottom: 30px;
+}
+.single_project_wrapper .project_discription .single_details{
+	margin-bottom: 32px;
+}
+.single_project_wrapper .project_discription .single_details h4:after{
+	display: block;
+	content: '';
+	width: 48px;
+	height: 1px;
+	background-color: #ff0066;
+	margin: 10px 0 12px;
+}
+.single_project_wrapper .project_discription .single_details h5{
+	font-weight: 400;
+}
+.project_slide .slick-dots{
+	bottom: 20px;
+}
+.project_slide .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+.project_slide .slick-dots li.slick-active button{
+	background-color: #ff0066;
+	border-color: #ff0066;
+}
+.post_share_tag {
+	border-top: 1px solid #3a3a3a;
+	padding: 20px 0;
+	border-bottom: 1px solid #3a3a3a;
+}
+.post_share_tag .post_share ul li,
+.post_share_tag .post_tag ul li{
+	display: inline-block;
+}
+.post_share_tag .post_share ul li:first-child,
+.post_share_tag .post_tag ul li:first-child{
+	margin-right: 20px;
+	font-size: 18px;
+}
+.post_share_tag .post_share ul li,
+.post_share_tag .post_tag ul li{
+	margin-right: 6px;
+}
+.post_share_tag .post_tag ul li a{
+	display: block;
+	padding: 6px 20px;
+	color: #fff;
+	border: 1px solid #fff;
+	font-size: 14px;
+	transition: all .5s;
+}
+.post_share{
+	float: right;
+}
+.post_share_tag .post_share ul li a{
+	display: block;
+	width: 40px;
+  	height: 40px;
+  	line-height: 40px;
+  	text-align: center;
+  	border: 1px solid #fff;
+  	font-size: 14px;
+  	color: #fff;
+  	transition: all .5s;
+}
+.post_share_tag .post_tag ul li a:hover,
+.post_share_tag .post_tag ul li a:focus,
+.post_share_tag .post_share ul li a:hover,
+.post_share_tag .post_share ul li a:focus{
+	background-color: #ff0066;
+	border-color: #ff0066;
+	color: #fff;
+}
+/*>================================
+	End single_project.html css
+==================================<*/
+
+/*>=============================
+	Start single_blog.html css
+================================<*/
+.shamko_single_blog{
+	background-color: #1b1b1b;
+}
+.single_blog_main .post_title{
+	padding-left: 15px;
+	border-left: 10px solid #ff0066;
+	margin-top: 60px;
+	margin-bottom: 33px;
+}
+.single_blog_main .post_title h3{
+	font-size: 32px;
+	line-height: 44px;
+}
+.single_blog_main .post_title span{
+	margin-right: 40px;
+	text-transform: capitalize;
+	font-family: 'Poppins';
+}
+.single_blog_main .post_title span a{
+	color: #ff0066;
+}
+.single_blog_main .single_text_content {
+	display: table;
+}
+.single_blog_main .single_text_content p{
+	margin-bottom: 27px;
+}
+.single_blog_main .single_content_box {
+	margin-top: 27px;
+	margin-bottom: 60px;
+}
+.single_content_box .shamko_content_box p{
+	margin-bottom: 15px;
+} 
+.single_content_box .shamko_content_box ul{
+	margin-bottom: 15px;
+}
+.single_content_box .shamko_content_box ul li:before{
+	display: inline-block;
+	content: '';
+	width: 6px;
+  	height: 6px;
+  	border-radius: 50%;
+  	background-color: #ff0066;
+  	margin-right: 15px;
+  	vertical-align: middle;
+}
+/*>=============================
+	End single_blog.html css
+================================<*/
+
+/*>=============================
+	12. Start scroll_top css
+================================<*/
+#scroll_top {
+    position: fixed;
+    bottom: 20px;
+    display: none;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #ff0066;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    z-index: 337;
+    cursor: pointer;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+/*>======================================
+	End scroll_top css
+========================================<*/
+
+/*>==============================
+	13. Start Preloader css
+===============================<*/
+.preloader_area{
+	background: #fff;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	z-index: 11000;
+}
+.spinner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.spinner > div {
+	width: 18px;
+	height: 18px;
+	background-color: #242426;
+	border-radius: 100%;
+	display: inline-block;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0) }
+	40% { -webkit-transform: scale(1.0) }
+}
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	} 40% { 
+	-webkit-transform: scale(1.0);
+	transform: scale(1.0);
+	}
+}
+/*>======================
+	End Preloader css
+=========================<
+
+/*>=============================
+	Start index.html css
+================================<*/
+.demo_header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: transparent;
+	z-index: 337;
+}
+.demo_header .demo_button{
+	float: right;
+}
+.demo_page_menu{
+	padding: 20px 0;
+}
+.demo_banner{
+	padding: 212px 0 120px;
+}
+.demo_banner .demo_content h2{
+	margin-bottom: 20px;
+}
+.demo_home{
+	background-color: #f7f7f7;
+	padding: 110px 0 115px;
+}
+.demo_home_content h2{
+	color: #242426;
+	margin-bottom: 15px;
+}
+.demo_home_content p{
+	color: #575757;
+}
+.home_list{
+	padding: 80px 0 40px;
+}
+.single_home{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.single_home .demo_img{
+	margin-bottom: 25px;
+}
+.single_home .demo_img img{
+	width: 100%;
+}
+.demo_link h4 a{
+	color: #242426;
+}
+.demo_link h4 a:hover,
+.demo_link h4 a:focus{
+	color: #ff0066;
+}
+.demo_feature{
+	padding: 120px 0;
+}
+.demo_inner_content h2{
+	margin-bottom: 10px;
+}
+.demo_feature_list{
+	padding: 120px 0 80px;
+}
+.single_box{
+	padding: 20px 30px;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0 2px 40px rgba(0,0,0,.08);
+	margin-bottom: 40px;
+}
+.single_box h5{
+	color: #1a1a1a;
+	margin-top: 10px;
+}
+.demo_footer{
+	padding:  52px 0 60px;
+}
+.footer_content h2{
+	margin-bottom: 20px;
+}
+.footer_content p{
+	margin-bottom: 25px;
+}
+.demo_btn{
+	display: inline-block;
+	padding: 15px 20px;
+	background-color: #ff0066;
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.demo_btn:hover,
+.demo_btn:focus{
+	color: #fff;
+}
+@media only screen and (max-width: 767px){
+	.demo_banner .demo_content h2,
+	.demo_home_content h2,
+	.demo_inner_content h2,
+	.footer_content h2 {
+	    font-size: 28px;
+	}
+	.demo_btn {
+	    padding: 10px 10px;
+	    font-size: 12px;
+	    letter-spacing: 0;
+	    text-transform: capitalize;
+	}
+}
+/*>=============================
+	End index.html css
+================================<*/
